@@ -215,6 +215,18 @@
       },
       {
         "type": "text",
+        "id": "social_linkdin_link",
+        "label": "Linkdin",
+        "info": "https://ca.linkedin.com/in/linkedin"
+      },
+      {
+        "type": "text",
+        "id": "social_instagram_link",
+        "label": "t:settings_schema.social-media.settings.social_instagram_link.label",
+        "info": "t:settings_schema.social-media.settings.social_instagram_link.info"
+      },
+      {
+        "type": "text",
         "id": "social_twitter_link",
         "label": "t:settings_schema.social-media.settings.social_twitter_link.label",
         "info": "t:settings_schema.social-media.settings.social_twitter_link.info"
@@ -224,18 +236,6 @@
         "id": "social_facebook_link",
         "label": "t:settings_schema.social-media.settings.social_facebook_link.label",
         "info": "t:settings_schema.social-media.settings.social_facebook_link.info"
-      },
-      {
-        "type": "text",
-        "id": "social_pinterest_link",
-        "label": "t:settings_schema.social-media.settings.social_pinterest_link.label",
-        "info": "t:settings_schema.social-media.settings.social_pinterest_link.info"
-      },
-      {
-        "type": "text",
-        "id": "social_instagram_link",
-        "label": "t:settings_schema.social-media.settings.social_instagram_link.label",
-        "info": "t:settings_schema.social-media.settings.social_instagram_link.info"
       },
       {
         "type": "text",
