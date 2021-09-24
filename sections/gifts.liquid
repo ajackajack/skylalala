@@ -1,0 +1,137 @@
+{{ 'section-gifts.css' | asset_url | stylesheet_tag }}
+
+{% style %}
+    .c-section--gifts {
+        background-color: {{ section.settings.background_color }};
+    }
+    .c-gifts__title h2,
+    .c-gifts__desc p {
+        color: {{ section.settings.text_color }};
+    }
+    .c-section--gifts .c-link a{
+        border-color: {{ section.settings.text_color }};
+        color: {{ section.settings.text_color }};
+    }
+{% endstyle %}
+
+<div class="o-section c-section--gifts">
+    <div class="o-section__wrapper c-gifts">
+        <div class="c-gifts__header">
+            {%- unless section.settings.title == blank -%}
+                <div class="c-gifts__title">
+                    <h2>{{ section.settings.title | escape }}</h2>
+                </div>
+            {%- endunless -%}
+            {%- unless section.settings.description == blank -%}
+                <div class="c-gifts__desc">
+                    <p>{{ section.settings.description | escape }}</p>
+                </div>
+            {%- endunless -%}
+        </div>
+        <div class="c-gifts__blocks">
+            {%- for block in section.blocks -%}
+                {%- if block.type == "page" -%}
+                    <div class="c-gifts__block">
+                        {%- unless block.settings.image == blank -%}
+                            <div class="c-gifts__block-image">
+                                {{ block.settings.image | img_url: 'large' | img_tag }}
+                            </div>
+                        {%- endunless -%}
+                        {%- unless block.settings.title == blank -%}
+                            <div class="c-gifts__block-title">
+                                <h3>{{ block.settings.title | escape }}</h3>
+                            </div>
+                        {%- endunless -%}
+                        {%- unless block.settings.link == blank -%}
+                            <div class="c-link">
+                                <a href="{{ block.settings.link }}">
+                                    {{ block.settings.link_text }}
+                                    {%- unless block.settings.link_Arrow == false -%}
+                                        {%- render "icon-arrow" -%}
+                                    {%- endunless -%}
+                                </a>
+                            </div>
+                        {%- endunless -%}
+                    </div>
+                {% endif %}   
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{%- unless section.settings.link == blank -%}
+    <div class="c-link">
+        <a href="{{ section.settings.link }}">
+            {{ section.settings.link_text }}
+            {%- unless section.settings.link_Arrow == false -%}
+                {%- render "icon-arrow" -%}
+            {%- endunless -%}
+        </a>
+    </div>
+{%- endunless -%}
+
+{% schema %}
+    {
+        "name": "Gifts",
+        "settings": [
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Title",
+                "default" : "Bespoke Gifts"
+            },
+            {
+                "type": "textarea",
+                "id": "description",
+                "label": "Description",
+                "default" : "The perfect luxury gift to excite senses and make a memorable impact."
+            },
+            {
+                "type" : "color",
+                "id" : "background_color",
+                "label" : "Background Color",
+                "default" : "#FFFFFF"
+            },
+            {
+                "type" : "color",
+                "id" : "text_color",
+                "label" : "Text Color",
+                "default" : "#000"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "page",
+                "name": "Page",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "title",
+                        "label": "Title"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "Image"
+                    },
+                    {
+                        "id" : "link",
+                        "type" : "url",
+                        "label" : "Link"
+                    },
+                    {
+                        "id" : "link_text",
+                        "type" : "text",
+                        "label" : "Link Text"
+                    },
+                    {
+                        "type": "checkbox",
+                        "id": "link_Arrow",
+                        "label": "Link Has Arrow Icon",
+                        "default": false
+                    }
+                ]
+            }
+        ]
+    }
+{% endschema %}

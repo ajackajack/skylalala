@@ -219,6 +219,9 @@
         "link_text": "Explore Blog",
         "link_Arrow": true
       }
+    },
+    "gifts": {
+      "type": "gifts"
     }
   },
   "order": [
@@ -226,8 +229,9 @@
     "product-slider",
     "own-box",
     "deliver",
-    "workshop",
+    "gifts",
     "featured-client",
+    "workshop",
     "16324624654034d11d",
     "sweet"
   ]

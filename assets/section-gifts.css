@@ -1,0 +1,63 @@
+.c-section--gifts {
+    padding: 176px 0;
+}
+
+.c-gifts__header {
+    max-width: 620px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.c-gifts__title h2 {
+    font-family: Silk, Serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 79px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #000000;
+    margin: 0;
+    text-align: center;
+}
+
+.c-gifts__desc p {
+    font-family: Helvetica, Neue;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 38px;
+    text-align: center;
+    color: #000000;
+}
+
+.c-gifts__blocks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+}
+
+.c-gifts__block {
+    flex-basis: 280px;
+    text-align: center;
+    margin: 20px;
+}
+
+.c-gifts__block-title {
+    height: 45px;
+}
+
+.c-gifts__block-title h3 {
+    display: inline-block;
+    background: #fff;
+    padding: 16px 9px;
+    transform: translateY(-81px);
+    font-family: Silk, Serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 34px;
+    text-align: right;
+    color: #000000;
+}
