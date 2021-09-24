@@ -1,0 +1,66 @@
+.c-article-slider {
+    display: flex;
+    padding: 125px 0;
+    overflow-x: hidden;
+}
+
+.c-article-slider a {
+    text-decoration: none;
+}
+
+.c-article-slider header {
+    margin-right: 40px;
+}
+
+.c-article-slider > header h2 {
+    font-family: Silk, Serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 79px;
+    text-transform: capitalize;
+    color: #000000;
+    margin: 0;
+}
+
+.article-card__title {
+    font-family: Helvetica, Neue;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 29px;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin: 16px 0;
+}
+
+.c-article-slider__slider {
+    display: flex;
+    margin: 0 -20px;
+}
+
+.c-article-slider__slider .article-card {
+    width: 270px;
+    margin: 15px;
+}
+
+.c-article-slider__slider .article-card img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.article-card__footer {
+    font-family: Helvetica, Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #1A1A1A;
+}
+
+.article-card__footer svg {
+    margin-left: 16px;
+}

@@ -1,0 +1,234 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Rectangle_11.png",
+        "title": "Artisan Macarons. Divinely electable.",
+        "desc": "Handmade, naturally gluten-free and higher almond content.\nExperience the best macarons in the world.",
+        "background_color": "#E94D38",
+        "text_color": "#FFFFFF",
+        "link": "#",
+        "link_text": "Order Now",
+        "link_Arrow": true
+      }
+    },
+    "product-slider": {
+      "type": "product-slider",
+      "settings": {
+        "title": "A Little Taste of Heaven",
+        "sub_title": "Eminently giftable, shipped anywhere in the UK.",
+        "collection": "cloth",
+        "button_label": "Add To Cart"
+      }
+    },
+    "own-box": {
+      "type": "own-box",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Ohlala_white.png",
+        "title": "Build your own box",
+        "desc": "Here at Ohlala we bake bespoke macarons that surprise, delight and stretch far beyond your wildest dreams!",
+        "text_alignment": "right",
+        "background_color": "#FFFFFF",
+        "text_color": "#121212",
+        "link": "#",
+        "link_text": "Order Now",
+        "link_Arrow": true
+      }
+    },
+    "deliver": {
+      "type": "deliver",
+      "blocks": {
+        "456204b6-7ad0-4cbe-b97e-ec6b576b54b6": {
+          "type": "delivery-type",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Icon.png",
+            "title": "On Demand",
+            "desc": "Delivered the same day by motorbike or bicycle within a 2-hour delivery slot."
+          }
+        },
+        "20c2599d-d420-4805-9459-79951d8fab07": {
+          "type": "delivery-type",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/delivery-box_1.png",
+            "title": "Next Day Delivery",
+            "desc": "Carefully packaged and delivered to your door the very next day."
+          }
+        },
+        "83bd733d-62c9-409f-9f45-ec51a3db874e": {
+          "type": "delivery-type",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/calendar.png",
+            "title": "Scheduled Delivery",
+            "desc": "Select a date for delivery that best suits you."
+          }
+        }
+      },
+      "block_order": [
+        "456204b6-7ad0-4cbe-b97e-ec6b576b54b6",
+        "20c2599d-d420-4805-9459-79951d8fab07",
+        "83bd733d-62c9-409f-9f45-ec51a3db874e"
+      ],
+      "settings": {
+        "title": "How We Deliver Macaron Magic",
+        "background_color": "#FCD4B6",
+        "text_color": "#000000"
+      }
+    },
+    "workshop": {
+      "type": "workshop",
+      "settings": {
+        "image_1": "shopify:\/\/shop_images\/girl_stirring_macaron_at_ohlala_hen_party_1.jpg",
+        "image_2": "shopify:\/\/shop_images\/teaching-macs-copy_1.jpg",
+        "title": "Workshops",
+        "desc": "Macaron & Martini Making\nWorkshops!",
+        "background_color": "#FFFFFF",
+        "text_color": "#000000",
+        "link": "#",
+        "link_text": "View Workshops",
+        "link_Arrow": true
+      }
+    },
+    "featured-client": {
+      "type": "featured-client",
+      "blocks": {
+        "a287a5a9-703c-4bd6-8eb2-8abb2d5dfd2c": {
+          "type": "featured",
+          "settings": {
+            "featured_logo": "shopify:\/\/shop_images\/Metro.png"
+          }
+        },
+        "b04e51f5-24fb-483b-b72b-c11f3d6452b8": {
+          "type": "featured",
+          "settings": {
+            "featured_logo": "shopify:\/\/shop_images\/MTV.png"
+          }
+        },
+        "301f7c06-0e3e-4b57-a203-39d26fd2c242": {
+          "type": "featured",
+          "settings": {
+            "featured_logo": "shopify:\/\/shop_images\/Sunday_Times_Style.png"
+          }
+        },
+        "060c3ce3-3da3-45d2-80ab-7cd6732e8b19": {
+          "type": "featured",
+          "settings": {
+            "featured_logo": "shopify:\/\/shop_images\/Sheer_Luxe.png"
+          }
+        },
+        "845e3881-b368-48f9-97cd-3744f93ff75b": {
+          "type": "featured",
+          "settings": {
+            "featured_logo": "shopify:\/\/shop_images\/Daily_Mail.png"
+          }
+        },
+        "08a724f9-2bc4-45be-a49b-ba3d0faf845c": {
+          "type": "featured",
+          "settings": {
+            "featured_logo": "shopify:\/\/shop_images\/London_Evening_Standard.png"
+          }
+        },
+        "00920653-6730-4d2d-8504-5cb937f3947f": {
+          "type": "clients",
+          "settings": {
+            "client_logo": "shopify:\/\/shop_images\/Group.png"
+          }
+        },
+        "f418a4e1-8848-46e4-a9f0-51f3310f0a0b": {
+          "type": "clients",
+          "settings": {
+            "client_logo": "shopify:\/\/shop_images\/missoni-grey.png"
+          }
+        },
+        "3db8b650-2395-4cd3-a901-9771eb32561a": {
+          "type": "clients",
+          "settings": {
+            "client_logo": "shopify:\/\/shop_images\/AlexanderMcQueen-logo-grey-sqr.png"
+          }
+        },
+        "138785b3-bf7e-434e-94d4-a02adcd204f9": {
+          "type": "clients",
+          "settings": {
+            "client_logo": "shopify:\/\/shop_images\/TomFord-logo-grey-sqr.png"
+          }
+        },
+        "23645799-b235-497c-9018-e02f3ae82b09": {
+          "type": "clients",
+          "settings": {
+            "client_logo": "shopify:\/\/shop_images\/mjb-header-Logo-new_1.png"
+          }
+        },
+        "adb5471d-c0de-456e-bb64-6aa9d2c9c0e8": {
+          "type": "clients",
+          "settings": {
+            "client_logo": "shopify:\/\/shop_images\/viv-grey.png"
+          }
+        },
+        "e0564fd3-9df4-4e61-9978-06cca1ab44af": {
+          "type": "clients",
+          "settings": {
+            "client_logo": "shopify:\/\/shop_images\/manolo-grey.png"
+          }
+        }
+      },
+      "block_order": [
+        "a287a5a9-703c-4bd6-8eb2-8abb2d5dfd2c",
+        "b04e51f5-24fb-483b-b72b-c11f3d6452b8",
+        "301f7c06-0e3e-4b57-a203-39d26fd2c242",
+        "060c3ce3-3da3-45d2-80ab-7cd6732e8b19",
+        "845e3881-b368-48f9-97cd-3744f93ff75b",
+        "08a724f9-2bc4-45be-a49b-ba3d0faf845c",
+        "00920653-6730-4d2d-8504-5cb937f3947f",
+        "f418a4e1-8848-46e4-a9f0-51f3310f0a0b",
+        "3db8b650-2395-4cd3-a901-9771eb32561a",
+        "138785b3-bf7e-434e-94d4-a02adcd204f9",
+        "23645799-b235-497c-9018-e02f3ae82b09",
+        "adb5471d-c0de-456e-bb64-6aa9d2c9c0e8",
+        "e0564fd3-9df4-4e61-9978-06cca1ab44af"
+      ],
+      "settings": {
+        "top_title": "As Featured In",
+        "bottom_title": "Our clients include",
+        "background_color": "#FCD4B6",
+        "text_color": "#000000"
+      }
+    },
+    "16324624654034d11d": {
+      "type": "own-box",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Group_85.jpg",
+        "title": "Our Story",
+        "desc": "An online boutique bakery based in the heart of Bloomsbury, obsessed with making the best macarons in the world.",
+        "text_alignment": "left",
+        "background_color": "#FFFFFF",
+        "text_color": "#121212",
+        "link": "#",
+        "link_text": "Learn More",
+        "link_Arrow": true
+      }
+    },
+    "sweet": {
+      "type": "sweet",
+      "settings": {
+        "title": "Sweet Inspirations",
+        "sub_title": "Indulge in our latest recipes, tips,\nand more!",
+        "background_color": "#FCD4B6",
+        "button_label": "Read Article",
+        "text_color": "#000",
+        "link": "#",
+        "link_text": "Explore Blog",
+        "link_Arrow": true
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "product-slider",
+    "own-box",
+    "deliver",
+    "workshop",
+    "featured-client",
+    "16324624654034d11d",
+    "sweet"
+  ]
+}

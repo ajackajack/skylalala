@@ -1,0 +1,48 @@
+.c-section--own-box {
+    margin-bottom: 100px;
+}
+
+.c-own-box {
+    position: relative;
+    margin-top: 100px;
+}
+
+.c-own-box__image {
+    padding-left: 15%;
+}
+
+.c-own-box__content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 620px;
+    left: 40%;
+}
+
+.c-own-box__title h2 {
+    font-family: Silk Serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+    text-transform: capitalize;
+    color: #000000;
+    margin: 0;
+}
+
+.c-own-box__desc p{
+    font-family: Helvetica, Neue;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 38px;
+    color: #1A1A1A;
+}
+
+.c-own-box--left .c-own-box__image {
+    padding-left: 50%;
+}
+
+.c-own-box--left .c-own-box__content {
+    left: 9%;
+}

@@ -1,0 +1,25 @@
+.c-featured-client {
+    padding: 80px 0;
+}
+
+.c-featured-clien__slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.c-featured-client__title h2{
+    font-family: Silk Serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 35px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #1A1A1A;
+}
+
+.c-featured-client__col {
+    margin: 20px;
+}

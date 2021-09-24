@@ -1,0 +1,78 @@
+{{ 'section-deliver.css' | asset_url | stylesheet_tag }}
+{%- style -%}
+    .c-section--deliver {
+        background-color: {{ section.settings.background_color }};
+    }
+    .c-deliver__content h2 {
+        color: {{ section.settings.text_color }};
+    }
+{%- endstyle -%}
+<section class="o-section c-section--deliver">
+    <div class="o-section__wrapper c-deliver">
+        {%- unless section.settings.title == blank -%}
+            <div class="c-deliver__title">
+                <h2>{{ section.settings.title | escape }}</h2>
+            </div>
+        {%- endunless -%}
+        <div class="c-deliver__content">
+            {% for block in section.blocks %}
+                <div class="c-deliver__col">
+                    <div class="c-deliver__icon">
+                        {{ block.settings.icon | img_url: 'medium' | img_tag }}
+                    </div>
+                    <h3>{{ block.settings.title }}</h3>
+                    <p>{{ block.settings.desc }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{%- schema -%}
+{
+    "name" : "Delivery",
+    "settings" : [
+        {
+            "id" : "title",
+            "type" : "text",
+            "label" : "Title",
+            "default" : "Title"
+        },
+        {
+            "id" : "background_color",
+            "type" : "color",
+            "label" : "Background Color",
+            "default" : "#FFFFFF"
+        },
+        {
+            "id" : "text_color",
+            "type" : "color",
+            "label" : "Text Color",
+            "default" : "#000000"
+        }
+    ],
+    "blocks": [
+        {
+            "name": "Delivery Type",
+            "type": "delivery-type",
+            "settings": [
+                {
+                    "id" : "icon",
+                    "type" : "image_picker",
+                    "label" : "Icon"
+                },
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Title"
+                },
+                {
+                    "type": "textarea",
+                    "id": "desc",
+                    "label": "Description"
+                }
+            ]
+        }
+    ]
+}
+{%- endschema -%}

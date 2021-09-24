@@ -1,0 +1,118 @@
+{{ 'section-own-box.css' | asset_url | stylesheet_tag }}
+{%- style -%}
+    .c-section--own-box {
+        background-color: {{ section.settings.background_color }};
+    }
+    .c-own-box__content h2,
+    .c-own-box__desc p,
+    .c-link a {
+        color: {{ section.settings.text_color }};
+    }
+    .c-link a{
+        border-color: {{ section.settings.text_color }};
+    }
+{%- endstyle -%}
+<section class="o-section c-section--own-box">
+    <div class="o-section__wrapper c-own-box {% if section.settings.text_alignment == 'left' -%}c-own-box--left{%- endif -%}">
+        <div class="c-own-box__image">
+            {{ section.settings.image | img_url: 'large' | img_tag }}
+        </div>
+        <div class="c-own-box__content">
+            {%- unless section.settings.title == blank -%}
+                <div class="c-own-box__title">
+                    <h2>{{ section.settings.title | escape }}</h2>
+                </div>
+            {%- endunless -%}
+            {%- unless section.settings.desc == blank -%}
+                <div class="c-own-box__desc">
+                    <p>{{ section.settings.desc | escape }}</p>
+                </div>
+            {%- endunless -%}
+            {%- unless section.settings.link == blank -%}
+                <div class="c-link">
+                    <a href="{{ section.settings.link }}">
+                        {{ section.settings.link_text }}
+                        {%- unless section.settings.link_Arrow == false -%}
+                            {%- render "icon-arrow" -%}
+                        {%- endunless -%}
+                    </a>
+                </div>
+            {%- endunless -%}
+        </div>
+    </div>
+</section>
+
+{%- schema -%}
+{
+    "name" : "Own Box",
+    "settings" : [
+        {
+            "id" : "image",
+            "type" : "image_picker",
+            "label" : "Own Box Image"
+        },
+        {
+            "id" : "title",
+            "type" : "text",
+            "label" : "Title",
+            "default" : "Title"
+        },
+        {
+            "id" : "desc",
+            "type" : "textarea",
+            "label" : "Description",
+            "default" : "Description"
+        },
+        {
+            "type": "select",
+            "id": "text_alignment",
+            "label": "Text Alignment",
+            "options": [
+              {
+                "value": "left",
+                "label": "Left"
+              },
+              {
+                "value": "right",
+                "label": "Right"
+              }
+            ],
+            "default": "right"
+        },
+        {
+            "id" : "background_color",
+            "type" : "color",
+            "label" : "Background Color",
+            "default" : "#E94D38"
+        },
+        {
+            "id" : "text_color",
+            "type" : "color",
+            "label" : "Text Color",
+            "default" : "#FFFFFF"
+        },
+        {
+            "id" : "link",
+            "type" : "url",
+            "label" : "Link"
+        },
+        {
+            "id" : "link_text",
+            "type" : "text",
+            "label" : "Link Text"
+        },
+        {
+            "type": "checkbox",
+            "id": "link_Arrow",
+            "label": "Link Has Arrow Icon",
+            "default": false
+        }
+    ],
+    "presets": [
+        {
+            "category": "Store Information",
+            "name": "Own Box"
+        }
+    ]
+}
+{%- endschema -%}

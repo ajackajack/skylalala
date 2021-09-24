@@ -1,0 +1,94 @@
+{%- assign blog = blogs.News -%}
+{{ 'section-article-slider.css' | asset_url | stylesheet_tag }}
+{{ 'component-product-card.css' | asset_url | stylesheet_tag }}
+
+{% style %}
+.c-section--article-slider {
+    background-color: {{ section.settings.background_color }};
+}
+{% endstyle %}
+
+<section class="o-section c-section--article-slider">
+    <div class="o-section__wrapper c-article-slider">
+        <header>
+            <h2 class="c-article-slider__title">
+                {{ section.settings.title | escape }}
+            </h2>
+            <p class="c-article-slider__sub-title">
+                {{ section.settings.sub_title | escape }}
+            </p>
+            {%- if section.settings.link_text -%}
+            <div class="c-link">
+                <a href="{{ section.settings.link }}">
+                    {{ section.settings.link_text }}
+                    {%- if section.settings.link_Arrow -%}
+                        <svg width="23" height="13" viewBox="0 0 23 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.2099 0.142334L22.7154 6.49993L16.2099 12.8575L15.511 12.1423L20.773 6.99993H0V5.99993H20.773L15.511 0.857521L16.2099 0.142334Z" fill="#1A1A1A"/>
+                        </svg>
+                    {%- endif -%}
+                </a>
+            </div>
+            {%- endif -%}
+        </header>
+        <div class="c-article-slider__slider js-articles-slider">
+            {%- assign button_label = section.settings.button_label -%}
+            {%- for article in blog.articles -%}
+                {%- render 'article-card', article: article, button_label:button_label -%}
+            {%- endfor -%}
+        </div>
+    </div>
+</section>
+
+{%- schema -%}
+{
+    "name" : "Sweet",
+    "settings" : [
+        {
+            "id" : "title",
+            "type" : "text",
+            "label" : "Title",
+            "default" : "Product Slider"
+        },
+        {
+            "id" : "sub_title",
+            "type" : "textarea",
+            "label" : "Description",
+            "default" : "Product Slider Description"
+        },
+        {
+            "type": "color",
+            "id": "background_color",
+            "label": "Background Color",
+            "default": "#FCD4B6"
+        },
+        {
+            "type": "text",
+            "id": "button_label",
+            "label": "Button Label",
+            "default": "Read Article"
+        },
+        {
+            "id": "text_color",
+            "type": "color",
+            "label": "Text Color",
+            "default": "#000"
+        },
+        {
+            "id": "link",
+            "type": "url",
+            "label": "Link"
+        },
+        {
+            "id": "link_text",
+            "type": "text",
+            "label": "Link Text"
+        },
+        {
+            "type": "checkbox",
+            "id": "link_Arrow",
+            "label": "Link Has Arrow Icon",
+            "default": false
+        }
+    ]
+}
+{%- endschema -%}

@@ -1,0 +1,100 @@
+{{ 'section-workshop.css' | asset_url | stylesheet_tag }}
+{%- style -%}
+    .c-workshop__content {
+        background-color: {{ section.settings.background_color }};
+    }
+    .c-workshop__content h2,
+    .c-workshop__desc p,
+    .c-link a {
+        color: {{ section.settings.text_color }};
+    }
+    .c-link a{
+        border-color: {{ section.settings.text_color }};
+    }
+{%- endstyle -%}
+<section class="o-section c-section--workshop">
+    <div class="o-section__wrapper c-workshop">
+        <div class="c-workshop__image">{{ section.settings.image_1 | img_url: 'large' | img_tag }}</div>
+        <div class="c-workshop__image">{{ section.settings.image_2 | img_url: 'large' | img_tag }}</div>
+        <div class="c-workshop__content">
+            {%- unless section.settings.title == blank -%}
+                <div class="c-workshop__title">
+                    <h2>{{ section.settings.title | escape }}</h2>
+                </div>
+            {%- endunless -%}
+            {%- unless section.settings.desc == blank -%}
+                <div class="c-workshop__desc">
+                    <p>{{ section.settings.desc | escape }}</p>
+                </div>
+            {%- endunless -%}
+            {%- unless section.settings.link == blank -%}
+                <div class="c-link">
+                    <a href="{{ section.settings.link }}">
+                        {{ section.settings.link_text }}
+                        {%- unless section.settings.link_Arrow == false -%}
+                            {%- render "icon-arrow" -%}
+                        {%- endunless -%}
+                    </a>
+                </div>
+            {%- endunless -%}
+        </div>
+    </div>
+</section>
+
+{%- schema -%}
+{
+    "name" : "Workshops",
+    "settings" : [
+        {
+            "id" : "image_1",
+            "type" : "image_picker",
+            "label" : "First Image"
+        },
+        {
+            "id" : "image_2",
+            "type" : "image_picker",
+            "label" : "Second Image"
+        },
+        {
+            "id" : "title",
+            "type" : "text",
+            "label" : "Title",
+            "default" : "Workshop Title"
+        },
+        {
+            "id" : "desc",
+            "type" : "textarea",
+            "label" : "Description",
+            "default" : "Workshop Description"
+        },
+        {
+            "id" : "background_color",
+            "type" : "color",
+            "label" : "Background Color",
+            "default" : "#FFFFFF"
+        },
+        {
+            "id" : "text_color",
+            "type" : "color",
+            "label" : "Text Color",
+            "default" : "#000000"
+        },
+        {
+            "id" : "link",
+            "type" : "url",
+            "label" : "Link"
+        },
+        {
+            "id" : "link_text",
+            "type" : "text",
+            "label" : "Link Text"
+        },
+        {
+            "type": "checkbox",
+            "id": "link_Arrow",
+            "label": "Link Has Arrow Icon",
+            "default": false
+        }
+    ]
+}
+{%- endschema -%}

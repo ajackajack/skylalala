@@ -1,0 +1,104 @@
+{{ 'section-featured-client.css' | asset_url | stylesheet_tag }}
+{%- style -%}
+    .c-section--featured-client {
+        background-color: {{ section.settings.background_color }};
+    }
+    .c-featured-client__content h2 {
+        color: {{ section.settings.text_color }};
+    }
+{%- endstyle -%}
+<section class="o-section c-section--featured-client">
+    <div class="o-section__wrapper c-featured-client">
+
+        {%- unless section.settings.top_title == blank -%}
+        <div class="c-featured-client__title">
+            <h2>{{ section.settings.top_title | escape }}</h2>
+        </div>
+        {%- endunless -%}
+        <div class="js-featured-slider c-featured-clien__slider">
+        {% for block in section.blocks %}
+            {% if block.type == "featured" %}
+                <div class="c-featured-client__col">
+                    <div class="c-featured-client__logo">
+                        {{ block.settings.featured_logo | img_url: 'medium' | img_tag }}
+                    </div>
+                </div>
+            {% endif %}   
+        {% endfor %}
+        </div>
+
+        {%- unless section.settings.bottom_title == blank -%}
+            <div class="c-featured-client__title">
+                <h2>{{ section.settings.bottom_title | escape }}</h2>
+            </div>
+        {%- endunless -%}
+        <div class="js-Client-slider c-featured-clien__slider">
+        {% for block in section.blocks %}
+            {% if block.type == "clients" %}
+                <div class="c-featured-client__col">
+                    <div class="c-featured-client__logo">
+                        {{ block.settings.client_logo | img_url: 'medium' | img_tag }}
+                    </div>
+                </div>
+            {% endif %}   
+        {% endfor %}
+        </div>
+
+    </div>
+</section>
+
+{%- schema -%}
+{
+    "name" : "Featured Client",
+    "settings" : [
+        {
+            "id" : "top_title",
+            "type" : "text",
+            "label" : "Top Title",
+            "default" : "Top Title"
+        },
+        {
+            "id" : "bottom_title",
+            "type" : "text",
+            "label" : "Bottom Title",
+            "default" : "Bottom Title"
+        },
+        {
+            "id" : "background_color",
+            "type" : "color",
+            "label" : "Background Color",
+            "default" : "#FFFFFF"
+        },
+        {
+            "id" : "text_color",
+            "type" : "color",
+            "label" : "Text Color",
+            "default" : "#000000"
+        }
+    ],
+    "blocks": [
+        {
+            "name": "Featured",
+            "type": "featured",
+            "settings": [
+                {
+                    "id" : "featured_logo",
+                    "type" : "image_picker",
+                    "label" : "Featured Logo"
+                }
+            ]
+        },
+        {
+            "name": "Clients",
+            "type": "clients",
+            "settings": [
+                {
+                    "id" : "client_logo",
+                    "type" : "image_picker",
+                    "label" : "client Logo"
+                }
+            ]
+        }
+    ]
+}
+{%- endschema -%}

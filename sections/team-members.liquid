@@ -1,0 +1,54 @@
+{{ 'section-team-members.css' | asset_url | stylesheet_tag }}
+<h2>Hello Abouzar</h2>
+<div class="c-team-members">
+    {% for member in section.blocks %}
+        <div class="c-team-members__col">
+            {{ member.settings.image | img_url: 'medium' | img_tag }}
+            <h3>{{ member.settings.name }}</h3>
+            <p>{{ member.settings.content }}</p>
+        </div>
+    {% endfor %}
+</div>
+
+{% schema %}
+{
+    "name": "Team Members",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "default": "Welcom To Our Team",
+            "label": "Title"
+        } 
+    ],
+    "blocks": [
+        {
+            "name": "Team Member",
+            "type": "staff-profile",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "name",
+                    "label": "Name"
+                },
+                {
+                    "type": "textarea",
+                    "id": "content",
+                    "label": "Description"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Image"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "category": "Store Information",
+            "name": "Team Members"
+        }
+    ]
+}
+{% endschema %}

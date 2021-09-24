@@ -1,0 +1,48 @@
+.c-product-card {
+    padding: 20px;
+}
+
+.c-product-card a {
+    text-decoration: none;
+}
+
+.c-product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.c-product-card__title {
+    font-family: Helvetica, Neue;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 29px;
+    letter-spacing: 0.04em;
+    margin-bottom: 24px;
+}
+
+.c-product-card__bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.c-product-card__bottom button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: Helvetica, Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.c-product-card__add #quantity {
+    display: none;
+}
+
+.c-product-card__bottom button svg {
+    margin-left: 18px;
+}

@@ -1,0 +1,40 @@
+{% comment %}
+    Renders an article card for a given blog with settings to either show the image or not.
+
+    Accepts:
+    - blog: {Object} Blog object
+    - article: {Object} Article object
+    - show_image: {String} The setting either show the article image or not. If it's not included it will show the image by default
+    - show_date: {String} The setting either show the article date or not. If it's not included it will not show the image by default
+    - show_author: {String} The setting either show the article author or not. If it's not included it will not show the author by default
+
+    Usage:
+    {% render 'article-card' blog: blog, article: article, show_image: section.settings.show_image %}
+{% endcomment %}
+
+<article class="article-card" aria-labelledby="Article-{{ article.id }}">
+  <a href="{{ article.url }}" class="article-content motion-reduce">
+      <div class="article-card__image-wrapper">
+        <img src="{{ article.image.src | img_url: 'large' }}"
+          sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+          alt="{{ article.image.src.alt | escape }}"
+          width="{{ article.image.width }}"
+          height="{{ article.image.height }}"
+          loading="lazy"
+        >
+      </div>
+      <div class="article-card__info">
+        <header class="article-card__header">
+          <h2 class="article-card__title" id="Article-{{ article.id }}">
+            {{ article.title | escape }}
+          </h2>
+        </header>
+        <div class="article-card__footer">
+          {{ button_label }}
+          <svg width="49" height="13" viewBox="0 0 49 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 6.5H48M48 6.5L42 0.5M48 6.5L42 12.5" stroke="black"/>
+          </svg>            
+        </div>
+      </div>
+  </a>
+</article>

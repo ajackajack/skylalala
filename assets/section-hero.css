@@ -1,0 +1,43 @@
+.c-section--hero {
+    margin-bottom: 154px;
+}
+
+.c-hero {
+    display: flex;
+    padding: 40px 50px;
+}
+
+.c-hero__content{
+    flex: 2;
+    position: relative;
+    z-index: 2;
+}
+
+.c-hero__image {
+    flex: 1;
+    position: relative;
+}
+
+.c-hero__image img {
+    width: 100%;
+    position: absolute;
+    top: 43px;
+    left: -94px;
+    z-index: 1;
+}   
+
+.c-hero__title h2{
+    font-family: Silk Serif;
+    font-size: 77px;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: capitalize;
+}
+
+.c-hero__desc p{
+    font-family: Helvetica, Neue;
+    font-size: 24px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.6;
+}

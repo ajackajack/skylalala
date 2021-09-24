@@ -1,0 +1,52 @@
+{% comment %}
+    Renders a product card
+
+    Accepts:
+    - card_product: {Object} Product Liquid object (optional)
+    - media_size: {String} Size of the product image card. Values are "square" and "portrait". Default is "square" (optional)
+    - show_secondary_image: {Boolean} Show the secondary image on hover. Default: false (optional)
+    - add_image_padding: {Boolean} Enables padding on the image to space out the grid
+    - show_vendor: {Boolean} Show the product vendor. Default: false
+    - show_image_outline: {Boolean} Show card outline. Default: true (optional)
+    - show_rating: {Boolean} Show the product rating. Default: false
+
+    Usage:
+    {% render 'product-card', show_vendor: section.settings.show_vendor %}
+{% endcomment %}
+
+<div class="c-product-card">
+  <a href="{{ card_product.url | default: '#' }}">
+    <div class="c-product-card__header">
+      {%- if card_product.featured_media -%}
+        <img src="{{ card_product.featured_media | img_url: 'large' }}">
+      {%- endif -%}
+
+      <div class="card__badge">
+        {%- if card_product.available == false -%}
+          <span class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}" aria-hidden="true">{{ 'products.product.sold_out' | t }}</span>
+        {%- elsif card_product.compare_at_price > card_product.price and card_product.available -%}
+          <span class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}" aria-hidden="true">{{ 'products.product.on_sale' | t }}</span>
+        {%- endif -%}
+      </div>
+    </div>
+    <div class="c-product-card__information">
+      {%- if card_product.featured_media -%}
+        <h2 class="c-product-card__title">
+          {{ card_product.title | escape }}
+        </h2>
+      {%- endif -%}
+      <div class="c-product-card__bottom">
+        {% render 'price', product: card_product, price_class: '' %}
+        <form method="post" action="/cart/add" class="c-product-card__add">
+          <input type="hidden" name="id" value="{{ card_product.selected_or_first_available_variant.id }}" />
+          <input min="1" type="number" id="quantity" name="quantity" value="1"/>
+          <button type="submit">{{ button_label }}
+            <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7387 0L22 6L15.7387 12L15.0418 11.3322L20.1136 6.47218H0V5.52782H20.1136L15.0418 0.667759L15.7387 0Z" fill="black"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </a>
+</div>

@@ -1,0 +1,56 @@
+{
+  "current": {
+    "colors_accent_1": "#E94D38",
+    "social_pinterest_link": "https:\/\/pinterest.com\/shopify",
+    "social_instagram_link": "http:\/\/instagram.com\/shopify",
+    "social_linkdin_link": "https:\/\/ca.linkedin.com\/in\/linkedin",
+    "sections": {
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "blocks": {
+          "announcement-bar-0": {
+            "type": "announcement",
+            "settings": {
+              "text": "NEXT DAY NATIONWIDE DELIVERY via DHL courier*",
+              "color_scheme": "inverse",
+              "link": "#"
+            }
+          }
+        },
+        "block_order": [
+          "announcement-bar-0"
+        ],
+        "settings": {
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "color_scheme": "accent-1",
+          "logo_width": 100,
+          "logo_position": "middle-left",
+          "menu": "main-menu",
+          "show_line_separator": false,
+          "enable_sticky_header": true
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "menu": "footer",
+          "color_scheme": "inverse",
+          "newsletter_enable": true,
+          "newsletter_heading": "",
+          "show_social": true,
+          "operations_heading": "Office Opening Hours",
+          "operations": "Mon - Fri: 10am - 6pm\nSaturday: Workshops Only\nSunday: Closed  (workshops can be scheduled any time)",
+          "contact_heading": "Contact Details",
+          "contact": "Email: bookings@ohlala.co\nCall: 020 3 417 3610\nAddress: Level Two, 135a Gray's Inn Road, London, WC1X 8TU"
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+.c-workshop {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.c-workshop__image {
+    flex: 1;
+}
+
+.c-workshop__image img {
+    width: 100%;
+    height: auto;
+}
+
+.c-workshop__content {
+    text-align: center;
+    border-radius: 350px;
+    padding: 140px 75px;
+    max-width: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.c-workshop__content h2 {
+    font-family: Silk Serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #000000;
+    margin: 0 0 36px;
+}
+
+.c-workshop__desc p {
+    font-family: Helvetica, Neue;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 38px;
+    text-align: center;
+    color: #000000;
+    margin: 0 0 64px;
+}
