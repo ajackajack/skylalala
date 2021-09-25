@@ -6,8 +6,8 @@
         "image": "shopify:\/\/shop_images\/Rectangle_11.png",
         "title": "Artisan Macarons. Divinely electable.",
         "desc": "Handmade, naturally gluten-free and higher almond content.\nExperience the best macarons in the world.",
-        "background_color": "#E94D38",
-        "text_color": "#FFFFFF",
+        "background_color": "#e94d38",
+        "text_color": "#ffffff",
         "link": "#",
         "link_text": "Order Now",
         "link_Arrow": true
@@ -29,7 +29,7 @@
         "title": "Build your own box",
         "desc": "Here at Ohlala we bake bespoke macarons that surprise, delight and stretch far beyond your wildest dreams!",
         "text_alignment": "right",
-        "background_color": "#FFFFFF",
+        "background_color": "#ffffff",
         "text_color": "#121212",
         "link": "#",
         "link_text": "Order Now",
@@ -71,22 +71,54 @@
       ],
       "settings": {
         "title": "How We Deliver Macaron Magic",
-        "background_color": "#FCD4B6",
+        "background_color": "#fcd4b6",
         "text_color": "#000000"
       }
     },
-    "workshop": {
-      "type": "workshop",
+    "gifts": {
+      "type": "gifts",
+      "blocks": {
+        "f5a9588c-46c0-4f47-8ff9-7484279795e2": {
+          "type": "page",
+          "settings": {
+            "title": "branded gifts",
+            "image": "shopify:\/\/shop_images\/Unicorns-copy.jpg",
+            "link": "#",
+            "link_text": "Order Now",
+            "link_Arrow": true
+          }
+        },
+        "72329a52-f030-4de2-a66a-6a41a2993801": {
+          "type": "page",
+          "settings": {
+            "title": "Weddings",
+            "image": "shopify:\/\/shop_images\/weddingfavour-small-copy.jpg",
+            "link": "#",
+            "link_text": "Order Now",
+            "link_Arrow": true
+          }
+        },
+        "d1dca65e-28e6-4d2d-8080-fbcee37df8c6": {
+          "type": "page",
+          "settings": {
+            "title": "events",
+            "image": "shopify:\/\/shop_images\/mclaren-cupcakes-copy.jpg",
+            "link": "#",
+            "link_text": "Order Now",
+            "link_Arrow": true
+          }
+        }
+      },
+      "block_order": [
+        "f5a9588c-46c0-4f47-8ff9-7484279795e2",
+        "72329a52-f030-4de2-a66a-6a41a2993801",
+        "d1dca65e-28e6-4d2d-8080-fbcee37df8c6"
+      ],
       "settings": {
-        "image_1": "shopify:\/\/shop_images\/girl_stirring_macaron_at_ohlala_hen_party_1.jpg",
-        "image_2": "shopify:\/\/shop_images\/teaching-macs-copy_1.jpg",
-        "title": "Workshops",
-        "desc": "Macaron & Martini Making\nWorkshops!",
+        "title": "Bespoke Gifts",
+        "description": "The perfect luxury gift to excite senses and make a memorable impact.",
         "background_color": "#FFFFFF",
-        "text_color": "#000000",
-        "link": "#",
-        "link_text": "View Workshops",
-        "link_Arrow": true
+        "text_color": "#000"
       }
     },
     "featured-client": {
@@ -189,8 +221,22 @@
       "settings": {
         "top_title": "As Featured In",
         "bottom_title": "Our clients include",
-        "background_color": "#FCD4B6",
+        "background_color": "#fcd4b6",
         "text_color": "#000000"
+      }
+    },
+    "workshop": {
+      "type": "workshop",
+      "settings": {
+        "image_1": "shopify:\/\/shop_images\/girl_stirring_macaron_at_ohlala_hen_party_1.jpg",
+        "image_2": "shopify:\/\/shop_images\/teaching-macs-copy_1.jpg",
+        "title": "Workshops",
+        "desc": "Macaron & Martini Making\nWorkshops!",
+        "background_color": "#ffffff",
+        "text_color": "#000000",
+        "link": "#",
+        "link_text": "View Workshops",
+        "link_Arrow": true
       }
     },
     "16324624654034d11d": {
@@ -200,7 +246,7 @@
         "title": "Our Story",
         "desc": "An online boutique bakery based in the heart of Bloomsbury, obsessed with making the best macarons in the world.",
         "text_alignment": "left",
-        "background_color": "#FFFFFF",
+        "background_color": "#ffffff",
         "text_color": "#121212",
         "link": "#",
         "link_text": "Learn More",
@@ -212,16 +258,13 @@
       "settings": {
         "title": "Sweet Inspirations",
         "sub_title": "Indulge in our latest recipes, tips,\nand more!",
-        "background_color": "#FCD4B6",
+        "background_color": "#fcd4b6",
         "button_label": "Read Article",
-        "text_color": "#000",
+        "text_color": "#000000",
         "link": "#",
         "link_text": "Explore Blog",
         "link_Arrow": true
       }
-    },
-    "gifts": {
-      "type": "gifts"
     }
   },
   "order": [
