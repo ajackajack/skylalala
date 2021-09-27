@@ -44,9 +44,40 @@
             "show_dynamic_checkout": true
           }
         },
-        "description": {
-          "type": "description",
+        "fc2831bd-038c-4464-abc3-98f95b763b39": {
+          "type": "collapsible_tab",
           "settings": {
+            "heading": "Description",
+            "content": "<p><strong>NEW! Now you can upgrade your unicorns with rainbow horns! Just select “rainbow horns” when ordering!<\/strong><br\/><br\/>You're straight up magic and you deserve these unicorn macarons!<br\/>Simply the prettiest macarons you'll ever see, our gift boxes of unicorn macarons come in a selection of our most adored flavours.<br\/>Each box contains handcrafted unicorn macarons decorated with edible glitter sprinkles and hand painted sugar glitter horns.<br\/><br\/><strong>Flavours:<\/strong><br\/>Madagascan Vanilla<br\/>Raspberry Ripple<br\/>Salted Caramel<\/p>",
+            "page": "",
+            "icon": "none"
+          }
+        },
+        "d7a40c6a-d494-4d3d-92f4-9c1bc1fd09ac": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Ingredients & Allergen Advice",
+            "content": "<p>Handmade, gluten free and with a higher almond content than most macarons, Ohlala really does make the best macarons in the world. We take pride in our attention to detail and work tirelessly to ensure that every single order is exactly the way you want it to be.<br\/><br\/><strong>Allergens:<\/strong><br\/>contains nuts<br\/>eggs<br\/>dairy<br\/><br\/>All of our macarons are hand made in London with the finest ingredients and can be refrigerated for up to one week. Our macarons are suitable for gluten free, vegetarian and halal diets. <\/p>",
+            "page": "",
+            "icon": "none"
+          }
+        },
+        "69b2b261-fe1c-4778-965e-bbd2ca2f548c": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Delivery Information",
+            "content": "<p>Your gift box will be delivered by specialist courier. You are able to specify your delivery date when you place your order.  Please do make sure someone is at home when we deliver, we would hate for your lovely macarons to come back to us. <br\/>We understand that you would like your gift to arrive safely and on time, so we will always go the extra mile to ensure that happens. <br\/><br\/><strong>DELIVERY: <\/strong><br\/>Next day delivery \/ £6.95 nationwide available Tue-Fri only (excl holidays \/ to be ordered by 2pm a day before)<br\/>Next day before 12pm delivery \/ £15.95 nationwide available Tue-Fri only (excl holidays \/ to be ordered by 2pm a day before)<br\/>Same day delivery to Central London (W1, WC1, WC2, N1, NW1, E1, EC1, EC2, EC3, SW1, SW2, SE1) \/ £20.00 Available everyday <br\/>Monday \/ Weekends \/ EU \/ any other delivery options available upon request with additional cost<br\/><br\/>PLEASE NOTE ANY ORDERS PLACED AFTER 2PM ON A FRIDAY WILL BE SENT OUT ON A MONDAY VIA DHL FOR TUESDAY DELIVERY <\/p>",
+            "page": "",
+            "icon": "none"
+          }
+        },
+        "d90af8bd-05cd-4b9b-824b-45e366ea6652": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Collapsible tab",
+            "content": "",
+            "page": "",
+            "icon": "check_mark"
           }
         },
         "share": {
@@ -64,7 +95,10 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "description",
+        "fc2831bd-038c-4464-abc3-98f95b763b39",
+        "d7a40c6a-d494-4d3d-92f4-9c1bc1fd09ac",
+        "69b2b261-fe1c-4778-965e-bbd2ca2f548c",
+        "d90af8bd-05cd-4b9b-824b-45e366ea6652",
         "share"
       ],
       "settings": {
