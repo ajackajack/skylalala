@@ -74,10 +74,10 @@
         "d90af8bd-05cd-4b9b-824b-45e366ea6652": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Collapsible tab",
-            "content": "",
+            "heading": "Looking to create a bespoke order?",
+            "content": "<p>For bespoke orders get in contact ...<br\/>We can create macarons in any colour and flavour combination.<br\/><strong>Contact Us<\/strong><\/p>",
             "page": "",
-            "icon": "check_mark"
+            "icon": "none"
           }
         },
         "share": {
