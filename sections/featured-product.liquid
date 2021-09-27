@@ -173,6 +173,10 @@
                       {{ product.variants | json }}
                     </script>
                   </variant-radios>
+
+                {%- elsif block.settings.picker_type == 'dropdown_last_btn' -%}
+
+
                 {%- else -%}
                   <variant-selects class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" data-update-url="false" {{ block.shopify_attributes }}>
                     {%- for option in product.options_with_values -%}

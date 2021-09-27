@@ -18,8 +18,8 @@
 .accordion {
   margin-top: 2.5rem;
   margin-bottom: 0;
-  border-top: 0.1rem solid rgba(var(--color-foreground), 0.08);
-  border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
 }
 
 .accordion__title {
@@ -28,6 +28,16 @@
   min-height: 1.6rem;
   margin: 0;
   word-break: break-word;
+  font-family: Helvetica, Neue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+  color: #1A1A1A;
+}
+
+.product__accordion.accordion details[open] .summary__title h2 {
+  border-bottom: 3px solid #000;
 }
 
 .accordion .icon-accordion {
@@ -41,9 +51,28 @@
   transform: rotate(180deg);
 }
 
+.accordion details svg {
+  margin-top: 7px;
+}
+
+.accordion details svg:last-child {
+  display: none;
+}
+
+.accordion details[open] svg {
+  display: none;
+}
+
+.accordion details[open] svg:last-child {
+  display: block;
+}
+
+
 .accordion__content {
   margin-bottom: 1.5rem;
   word-break: break-word;
+  color: #1A1A1A;
+  padding: 0;
 }
 
 .accordion__content img {

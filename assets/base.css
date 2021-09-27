@@ -446,9 +446,13 @@ blockquote {
 .field__input,
 .form__label,
 .select__select {
-  font-size: 1.3rem;
-  line-height: 1.5;
-  letter-spacing: 0.04rem;
+  font-family: Helvetica, Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #1A1A1A;
 }
 
 .color-foreground {
@@ -1366,11 +1370,14 @@ details[open] > .share-button__fallback {
 }
 
 .select__select {
-  font-family: var(--font-body-family);
-  font-style: var(--font-body-style);
-  font-weight: var(--font-body-weight);
-  font-size: 1.2rem;
-  color: rgba(var(--color-foreground), 0.75);
+  font-family: Helvetica, Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #1A1A1A;
+  border: 1px solid #000;
 }
 
 .field__input:hover,
@@ -1401,7 +1408,8 @@ details[open] > .share-button__fallback {
 
 .select .icon-caret,
 .customer select + svg {
-  height: 0.6rem;
+  width: 16px;
+  height: 8px;
   pointer-events: none;
   position: absolute;
   top: calc(50% - 0.2rem);
@@ -1536,7 +1544,7 @@ input[type='checkbox'] {
 
 .form__label {
   display: block;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0;
 }
 
 .form__message {
@@ -1595,7 +1603,7 @@ input[type='checkbox'] {
 
 /* component-quantity */
 .quantity {
-  border: 0.1rem solid rgba(var(--color-base-text), 0.08);
+  border: 1px solid #000;
   position: relative;
   height: 4.5rem;
   width: 14rem;
@@ -1603,11 +1611,13 @@ input[type='checkbox'] {
 }
 
 .quantity__input {
-  color: currentColor;
-  font-size: 1.4rem;
-  font-weight: 500;
-  opacity: 0.85;
+  font-family: Helvetica, Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
   text-align: center;
+  color: #231F20;
   background-color: transparent;
   border: 0;
   padding: 0 0.5rem;
@@ -1615,6 +1625,7 @@ input[type='checkbox'] {
   flex-grow: 1;
   -webkit-appearance: none;
   appearance: none;
+
 }
 
 .quantity__button {
