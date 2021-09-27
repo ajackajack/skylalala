@@ -4,6 +4,7 @@
     "social_pinterest_link": "https:\/\/pinterest.com\/shopify",
     "social_instagram_link": "http:\/\/instagram.com\/shopify",
     "social_linkdin_link": "https:\/\/ca.linkedin.com\/in\/linkedin",
+    "currency_code_enabled": false,
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
