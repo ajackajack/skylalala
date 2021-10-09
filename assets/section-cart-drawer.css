@@ -1,0 +1,88 @@
+.c-cart-drawer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    height: 196px;
+    z-index: 10000;
+    overflow: hidden;
+    max-width: 570px;
+    transform: translateX(-50%);
+    transition: height 150ms ease-in-out, max-width 150ms ease-in-out;
+}
+
+.c-cart-drawer.is-open {
+    max-width: 100%;
+    height: 100vh;
+    left: 0;
+    transform: translateX(0);
+    transition: height 300ms ease-in-out;
+}
+
+.c-cart-drawer__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: block !important;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 100ms ease-in-out;
+}
+
+.c-cart-drawer.is-open .c-cart-drawer__overlay {
+    pointer-events: initial;
+    opacity: 1;
+    transition: opacity 400ms ease-in-out;
+}
+
+.c-cart-drawer__wrapper {
+    position: relative;
+    top: calc(100% - 139px);
+    max-width: 570px;
+    height: 90vh;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 16px 16px 0 0;
+    max-width: 570px;
+    max-height: 196px;
+    transition: 150ms ease-in-out;
+}
+
+.c-cart-drawer.is-open .c-cart-drawer__wrapper {
+    top: calc(100% - 90vh);
+    max-width: 1050px;
+    max-height: 90vh;
+    transition: 300ms ease-in-out;
+}
+
+.c-cart-drawer__open-btn,
+.c-cart-drawer__close-btn {
+    position: absolute;
+    top: 8px;
+    right: 6px;
+    background: none;
+    border: none;
+}
+
+.c-cart-drawer.is-open .c-cart-drawer__open-btn {
+    display: none;
+}
+
+.c-cart-drawer__close-btn {
+    display: none;
+}
+
+.c-cart-drawer.is-open .c-cart-drawer__close-btn {
+    display: block;
+}
+
+.c-cart-drawer__header {
+    background-color: #212121;
+    height: 139px;
+    border-radius: 10px 10px 0 0;
+}
+
+.c-cart-drawer__cart-count {
+    cursor: pointer;
+}
