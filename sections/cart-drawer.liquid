@@ -1,0 +1,33 @@
+<style>
+    .c-cart-drawer {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: purple;
+    }
+</style>
+
+<section class="c-cart-drawer" id="cartDrawer">
+    <div class="c-cart-drawer__wrapper">
+        <!-- Close Btn -->
+        <div class="c-cart-drawer__overlay" data-drawer-close></div>
+        <!-- Header -->
+        <div class="c-cart-drawer__header">
+            <button class="c-cart-drawer__close" data-drawer-close>
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.67397 8.99997L0.836975 15.837L2.16297 17.163L8.99997 10.326L15.837 17.163L17.163 15.837L10.326 8.99997L17.163 2.16297L15.837 0.836975L8.99997 7.67397L2.16297 0.836975L0.836975 2.16297L7.67397 8.99997Z" fill="black"/>
+                </svg>                
+            </button>
+            <div class="c-cart-drawer__cart-count"></div>
+            <div class="c-cart-drawer__progress"></div>
+            <div class="c-cart-drawer__progress-message"></div>
+        </div>
+        <!-- Content -->
+        <div class="c-cart-drawer__content">
+            <div class="c-cart-drawer__cart"></div>
+            <div class="c-cart-drawer__suggestion"></div>
+        </div>
+    </div>
+</section>
